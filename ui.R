@@ -19,7 +19,9 @@ dashboardPage(
       # Supervised learning: MLR + Boosted Trees
       menuItem("Supervised Learning", tabName = "Sup", icon = icon("smile")),
       # Save subset of data
-      menuItem("Save Data", tabName = "SaveData", icon = icon("archive"))
+      menuItem("Save Data", tabName = "SaveData", icon = icon("archive")),
+      # Fun
+      menuItem("We R Having Fun", tabName="WeRFun", icon = icon("tired"))
     )
   ),
   
@@ -307,8 +309,18 @@ dashboardPage(
                 )  # End of box
               ),  # End of fluidRow
               fluidRow(dataTableOutput("dataTbl"))
-      ) # End tab
+      ), # End tab
       
+      # Funny Image tab to end with
+      tabItem(tabName = "WeRFun",
+              h4(tags$b("Thanks so much for coming to check out my app! Questions or comments? 
+                         Please check my blog out for more fun (and contact info).
+                         Complaints will be addressed not so promptly.")),
+              h4(tags$a(href="https://lynnshuang.github.io/about/", "Say Hi!")),
+              img(src="./Platypus.png")
+              )  # End tab
     )  # End tabItems
   )  # End dashboardBody
 )  # End of dashboardPage
+
+# Of use for formatting: https://rstudio.github.io/shinydashboard/appearance.html#icons
