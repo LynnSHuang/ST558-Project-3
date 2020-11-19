@@ -214,5 +214,4 @@ shinyServer(function(input, output, session) {
   output$downCSV <- downloadHandler(filename=function() {paste0("elections.csv")},
                                     content=function(file) {write.csv(getSubData(), file, row.names = FALSE)}
   )
-  
   }) # End of shinyServer

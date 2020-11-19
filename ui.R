@@ -317,10 +317,8 @@ dashboardPage(
                          Please check my blog out for more fun (and contact info).
                          Complaints will be addressed not so promptly.")),
               h4(tags$a(href="https://lynnshuang.github.io/about/", "Say Hi!")),
-              img(src="./Platypus.png")
-              )  # End tab
+              h4(tags$a(href="https://images.app.goo.gl/8QH84SSgv5kVDhSd8", "Coding Memes"))
+      ) # End tab
     )  # End tabItems
   )  # End dashboardBody
 )  # End of dashboardPage
-
-# Of use for formatting: https://rstudio.github.io/shinydashboard/appearance.html#icons
